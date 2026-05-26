@@ -1,9 +1,7 @@
-// =========================================================================
-// DOM Manipulation Exercises - Simple Clean Javascript
-// =========================================================================
 
-// --- Step 1: Select the DOM Elements ---
-// We use document.getElementById() to select the elements we want to interact with.
+
+//  Step 1: Select the DOM Elements 
+ //  use document.getElementById() to select the elements we want to interact with.
 const myHeader = document.getElementById('myHeader');
 const changeTextBtn = document.getElementById('changeTextBtn');
 const itemForm = document.getElementById('itemForm');
@@ -13,9 +11,8 @@ const removeBtn = document.getElementById('removeBtn');
 const itemCountSpan = document.getElementById('itemCount');
 
 
-// =========================================================================
+
 // 1. Change header text when button is clicked
-// =========================================================================
 // We define an array of alternative titles to cycle through.
 const titleOptions = [
   "Hello World!",
@@ -34,10 +31,8 @@ changeTextBtn.addEventListener('click', function() {
   myHeader.textContent = titleOptions[currentTitleIndex];
 });
 
-
-// =========================================================================
 // 2. Change header color on mouse movement
-// =========================================================================
+
 // We listen for the 'mousemove' event directly on the <h1> header element.
 myHeader.addEventListener('mousemove', function(event) {
   // event.offsetX and event.offsetY represent the pointer's position relative to the header.
@@ -60,9 +55,8 @@ myHeader.addEventListener('mouseleave', function() {
 });
 
 
-// =========================================================================
 // 3. Add new list items from the form input
-// =========================================================================
+
 // We listen to the form's 'submit' event.
 itemForm.addEventListener('submit', function(event) {
   // CRITICAL: Prevent the browser from refreshing the page on form submit
@@ -90,10 +84,8 @@ itemForm.addEventListener('submit', function(event) {
   }
 });
 
-
-// =========================================================================
 // 4. Remove first list item
-// =========================================================================
+
 // We attach a click event listener to the remove button.
 removeBtn.addEventListener('click', function() {
   // Select the first <li> child element inside the list parent
@@ -113,9 +105,7 @@ removeBtn.addEventListener('click', function() {
 });
 
 
-// =========================================================================
 // 5. Count total list items
-// =========================================================================
 // A simple function that counts active <li> elements inside the list and updates the page.
 function updateItemCount() {
   // Select all <li> elements inside the list
@@ -130,3 +120,5 @@ function updateItemCount() {
 
 // Initial count check on page load (starts at 0)
 updateItemCount();
+
+
