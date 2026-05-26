@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic DOM Manipulation Playground</title>
+  <!-- Link stylesheet file containing container, form, and button layout rules -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1. The header element which changes text on click, and shifts color on mouse movement -->
+    <h1 id="myHeader">
+      DOM Manipulation Header
+    </h1>
+
+    <!-- 2. Button to change the text of the header -->
+    <button id="changeTextBtn">Change Header Text</button>
+
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
+
+    <!-- 3. Form input to add new items to the list -->
+    <form id="itemForm">
+      <input type="text" id="itemInput" placeholder="Enter item name..." required>
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- 4. The list which holds our items -->
+    <ul id="itemList">
+      <!-- Items will be added dynamically by Javascript -->
+    </ul>
+
+    <!-- 5. Button to delete the first item from the list -->
+    <button id="removeBtn">Remove First Item</button>
+
+    <!-- 6. Display container to show the total items count -->
+    <p class="counter-text">Total Items Count: <span id="itemCount">0</span></p>
+  </div>
+
+  <!-- Link the Javascript code -->
+  <script src="sc.js"></script>
+</body>
+</html>

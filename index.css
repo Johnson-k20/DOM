@@ -1,0 +1,116 @@
+/* 
+  DOM Exercises - Simple & Elegant CSS 
+  Provides clear margins, paddings, and basic hover actions without overloading.
+*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+#myHeader {
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px dashed #94a3b8;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: crosshair;
+  background-color: #f1f5f9;
+  margin-top: 0;
+  margin-bottom: 15px;
+  transition: color 0.1s ease; /* Smooth hover coordinate coloring */
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+#itemForm {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#itemForm input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+#itemForm input[type="text"]:focus {
+  border-color: #3b82f6;
+}
+
+#itemForm button {
+  width: auto;
+  margin-bottom: 0;
+}
+
+#itemList {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+#itemList li {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#removeBtn {
+  background-color: #ef4444;
+}
+
+#removeBtn:hover {
+  background-color: #dc2626;
+}
+
+.counter-text {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#itemCount {
+  font-weight: 700;
+  color: #1e293b;
+}
